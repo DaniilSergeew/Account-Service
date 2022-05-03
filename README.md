@@ -2,7 +2,7 @@
 REST API для учета сотрудников компании
 ## Технологии
 - Java
-- Spring Framework
+- Spring Boot
 - Spring Security
 - Hibernate
 - H2 Database
