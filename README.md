@@ -27,7 +27,7 @@ REST API для учета сотрудников компании
 |```GET api/security/events```  | -         |  -   |-         |-            |+      |
 # Примеры
 ## Регистрация пользователя
-### ```POST api/auth/signup``` request
+#### ```POST api/auth/signup``` request
 
 Request body:
 ```json
@@ -54,7 +54,7 @@ Response body:
 **Пользователь, зарегистрировавшийся первым, автоматически назначается администратором**
 
 ## Назначение роли
-### ```PUT api/admin/user/role``` request с авторизацией администратора
+#### ```PUT api/admin/user/role``` request с авторизацией администратора
 
 Request body:
 ```json
@@ -81,7 +81,7 @@ Response body:
 **Для удаление роли используйте операцию REMOVE**
 
 ## Загрузка платежей
-### ```POST api/acct/payments``` request с авторизацией бухгалтера
+#### ```POST api/acct/payments``` request с авторизацией бухгалтера
 
 Request body:
 ```json
@@ -113,7 +113,7 @@ Response body:
 **Период должен быть уникальным**
 
 ## Просмотр платежа
-### ```GET api/empl/payment?period=01-2021``` request с авторизацией пользователя
+#### ```GET api/empl/payment?period=01-2021``` request с авторизацией пользователя
 
 Response body:
 ```json
@@ -127,7 +127,7 @@ Response body:
 
 
 ## Просмотр платежей
-### ```GET api/empl/payment``` request с авторизацией пользователя
+#### ```GET api/empl/payment``` request с авторизацией пользователя
 
 Response body:
 ```json
@@ -153,7 +153,7 @@ Response body:
 ]
 ```
 ## Блокировка/разблокировка пользователя
-### ```PUT api/admin/user/access``` request с авторизацией администратора
+#### ```PUT api/admin/user/access``` request с авторизацией администратора
 
 Request body:
 ```json
@@ -172,7 +172,7 @@ Response body:
 **Администратора заблокировать невозможно**
 
 ## Просмотр журнала
-### ```GET api/auth/signup``` request с авторизацией аудитора
+#### ```GET api/auth/signup``` request с авторизацией аудитора
 
 Response body:
 ```json
